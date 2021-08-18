@@ -1,2 +1,2 @@
-# Python Practice
-## This repo is dedicated to any python code I practice, edit, change, etc.
+## Python Practice
+### This repo contains python coding practice as well as jupyter notebooks.
