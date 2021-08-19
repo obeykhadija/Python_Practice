@@ -130,3 +130,37 @@ items = ["pizza", "shawarma", "sushi"]
 number = 3
 food_delivery = FoodDelivery(number, items)
 food_delivery.complete_order()
+
+#Perimeter Calculator
+class Polygon:
+  def perimeter(self):
+    print("Perimeter")
+
+class Rectangle(Polygon):
+  def __init__(self, length, width):
+    self.length = length
+    self.width = width
+  def perimeter(self):
+    return 2 * (self.length + self.width)
+
+class Square(Polygon):
+  def __init__(self, side):
+    self.side = side
+  def perimeter(self):
+    return 4 * self.side
+
+class Triangle(Polygon):
+  def __init__(self, a, b, c):
+    self.a = a
+    self.b = b
+    self.c = c
+  def perimeter(self):
+    return self.a + self.b + self.c
+ 
+polygon = Polygon()
+rectangle = Rectangle(4,6)
+square = Square(4)
+triangle = Triangle(6,6,6)
+print('Perimeter of Rectangle = ', rectangle.perimeter())
+print('Perimeter of Square =      ', square.perimeter())
+print('Perimeter of Triangle =   ', triangle.perimeter())
